@@ -1,0 +1,91 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+//Profile picture
+.profile{
+
+    width: 40px;
+    height: 40px;
+
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.notif-container{
+    padding: 0.5rem 3rem 1rem 3rem;
+
+    @include m.flexbox(flex-start, flex-start, column);
+
+}
+
+.notification{
+
+    @include m.flexbox(flex-start, flex-start, row);
+
+    box-sizing: content-box;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+
+    .notif-info{
+
+        padding-left: 1rem;
+
+        .user{
+            font-weight: 800;
+            color: v.$Very_dark_blue;
+        }
+
+
+        .post-ref{
+            color: v.$Dark_grayish_blue;
+            font-weight: 800;
+        }
+
+        .group-ref{
+            color: v.$Blue;
+            font-weight: 800;
+        }
+
+        .date{
+            padding-top: 0.2rem;
+            color: v.$Grayish_blue;
+            display: block;
+        }
+
+    }
+
+    .message-ref{ 
+        flex-direction: column;
+
+        .message{
+            padding: 1rem;
+            margin-right: 1rem;
+
+            border: solid;
+            border-color: v.$Light_grayish_blue_2;
+            border-width: 1.5px;
+        }
+    }
+
+    .picture-ref{
+
+        box-sizing: content-box;
+        width: 100%;
+
+        @include m.flexbox(space-between, flex-start, row);
+        
+        .picture{
+            width: 40px;
+            height: 40px;
+
+            padding-right: 1rem;
+            padding-top: 1rem;
+        }
+    }
+
+    background-color: v.$Very_light_grayish_blue;
+    
+}
+

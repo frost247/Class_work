@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="build/css/app.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+  
+  <div id="main-container">
+  
+    
+    <header>
+
+        <h3>
+          Notifications <span class="notif-count">3</span>
+        </h3>
+      
+        <p class="read-btn">Mark all as read</p>
+    </header>
+    
+    
+    <section class="notif-container">
+    
+      <article class="notification">
+    
+        <img src="./assets/images/avatar-mark-webber.webp" alt="" class="profile">
+        <div class="notif-info">
+          <p>
+            <span class="user">Mark Webber</span> 
+            <span class="action">reacted to your recent post</span> 
+            <span class="post-ref">My first tournament today!</span>
+            <span class="date">1m ago</span>
+          </p>
+        </div>
+      </article>
+    
+      <article class="notification">
+        <img src="./assets/images/avatar-angela-gray.webp" alt="" class="profile">
+        <div class="notif-info">
+          <p>
+            <span class="user">Angela Gray</span> 
+            <span class="action">followed you</span>
+            <span class="date">5m ago</span>
+          </p>
+        </div>
+      </article>
+    
+      <article class="notification">
+        <img src="./assets/images/avatar-jacob-thompson.webp" alt="" class="profile">
+        <div class="notif-info">
+          <p>
+            <span class="user">Jacob Thompson</span> 
+            <span class="action">has joined your group</span> 
+            <span class="group-ref">Chess Club</span>
+            <span class="date">1 day ago</span> 
+          </p>
+        </div>
+      </article>
+    
+      <article class="notification">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" class="profile">
+
+        <div class="notif-info message-ref">
+          <p>
+            <span class="user">Rizky Hasanuddin</span> 
+            <span class="action">sent you a private message</span>
+            <span class="date"> 5 days ago </span>
+          </p>
+
+          <p class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </p>
+
+        </div>
+    
+      </article>
+    
+      <article class="notification">
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="" class="profile">
+        <div class="notif-info picture-ref">
+          <p>
+            <span class="user">Kimberly Smith</span> 
+            <span class="action">commented on your picture</span>
+            <span class="date">1 week ago</span> 
+          </p>
+
+          <img src="./assets/images/image-chess.webp" alt="" class="picture">
+        </div>
+      </article>
+    
+      <article class="notification">
+        <img src="./assets/images/avatar-nathan-peterson.webp" alt="" class="profile">
+        <div class="notif-info">
+        </p>
+          <span class="user">Nathan Peterson</span> 
+          <span class="action">reacted to your recent post</span> 
+          <span class="post-ref">5 end-game strategies to increase your win rate</span> 
+          <span class="date">2 weeks ago</span>
+        <p>
+        </div>
+      </article>
+    
+      <article class="notification">
+        <img src="./assets/images/avatar-anna-kim.webp" alt="" class="profile">
+        <div class="notif-info">
+          <p>
+            <span class="user">Anna Kim</span>
+            <span class="action">left the group</span>
+            <span class="group-ref">Chess Club</span> 
+            <span class="date">2 weeks ago</span> 
+          </p>
+        </div>
+      </article>
+      
+    </section>
+    
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">OscarOstorga</a>.
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,14 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+#main-container{
+
+    margin-top: 5rem;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    margin-bottom: 5rem;
+
+    background-color: v.$White;
+
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

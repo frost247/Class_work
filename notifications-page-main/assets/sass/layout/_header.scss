@@ -1,0 +1,35 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+header{
+
+    padding: 1rem 3rem 0 3rem;
+
+    @include m.flexbox(space-between, flex-start, row);
+
+    h3{
+        color: v.$Very_dark_blue;
+    }
+
+    .notif-count{
+
+        box-sizing: border-box;
+
+        font-size: 14px;
+        font-weight: 800;
+
+        border-radius: 0.3rem;
+
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        vertical-align: 20%;
+
+        color: v.$White;
+        background-color: v.$Blue;
+    }
+
+    .read-btn{
+        align-self: center;
+    }
+
+    
+}
